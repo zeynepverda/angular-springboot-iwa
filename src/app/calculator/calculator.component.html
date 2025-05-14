@@ -1,0 +1,25 @@
+<p>calculator works!</p>
+
+<input #a type="number" placeholder="a value"/>
+<input #b type="number" placeholder="b value">
+<button (click)="addition(a.valueAsNumber, b.valueAsNumber)" type="button">Addition</button>
+<h3> Result:{{result1}}</h3>
+
+<input #c type="number" placeholder="c value"/>
+<input #d type="number" placeholder="d value">
+<button (click)="subtraction(c.valueAsNumber,d.valueAsNumber)" type="button">Subtraction</button>
+<h3> Result:{{result2}}</h3>
+
+<input #e type="number" placeholder="e value"/>
+<input #f type="number" placeholder="f value">
+<button (click)="multiplication(e.valueAsNumber,f.valueAsNumber)" type="button">Multiplication</button>
+<h3> Result:{{result3}}</h3>
+
+<input #g type="number" placeholder="g value"/>
+<input #h type="number" placeholder="h value">
+<button (click)="division(g.valueAsNumber,h.valueAsNumber)" type="button">Division</button>
+<h3> Result:{{result4}}</h3>
+
+<input #n type="number" placeholder="n value for Fibonacci" />
+<button (click)="fibonacci(n.valueAsNumber)" type="button">Fibonacci</button>
+<h3>Result: {{ result5 }}</h3>
